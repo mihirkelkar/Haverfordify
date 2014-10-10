@@ -1,0 +1,17 @@
+{
+	"manifest_version" : 2,
+	"name" : "Haverfordify !",
+	"version" : "1.0",
+	"description" : "Changes browser text from English to Tom Haverford English",
+	"content_scripts":
+	[
+		{
+			"matches" : ["*://*/*"],
+			"js": ["content.js"],
+			"run_at": "document_end"
+
+		}
+
+	]
+
+}
